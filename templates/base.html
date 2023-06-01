@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <!-- Insert the title block, or use "Shout Your Breakfast" as a fallback if none is provided. -->
+    <title>{% block title %} Shout Your Breakfast {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+  </head>
+  <body>
+    <div>Navigation: <a href="/index">Home</a></div>
+    <hr />
+    <!-- There's no fallback provided for the content block, so if none is provided, this part of the page will be left blank. -->
+    {% block content %}{% endblock %}
+  </body>
+</html>
